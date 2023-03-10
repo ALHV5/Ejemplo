@@ -1,0 +1,5 @@
+- Protected: permite que lo vean las clases hijo
+
+- Metodo Estatico Los metodos staticos son metodos que solo se usan en la misma clase que se crean, por eso si se necesita usar fuera de esta se escribe clase.metodo()
+    
+- Poli Morfismo : permite coger el metodo de las clases hijo, el metodo que se quiere usar se tiene declara en el padre como abstracto, a su vez el padre tiene que pasar a aser una 						clase abstracta.
