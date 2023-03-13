@@ -1,0 +1,23 @@
+- Protected: permite que lo vean las clases hijo
+
+- Metodo Estatico Los metodos staticos son metodos que solo se usan en la misma clase que se crean, por eso si se necesita usar fuera de esta se escribe clase.metodo()
+    
+- Poli Morfismo : permite coger el metodo de las clases hijo, el metodo que se quiere usar se tiene declara en el padre como abstracto, a su vez el padre tiene que pasar a ser una clase abstracta.
+
+-ArrayList:Usa las mismas formas que un vector pero permite construir arrays, se puede cambiar un array por un arrylist siempre y cuando no existan null en el array(https://www.w3schools.com/java/java_arraylist.asp), es mejor usar para informacion estatica(busquedas o recorridos).
+
+-LinkedList: Tambien usa las mismas formas que un vector, se puede cambiar un vector ya creado por LinkedList, es mejor cuando la informacion no es estatica (añadir).
+
+-HashMap: Almacena informacion que no se modifique y que permita buscar de forma rapida. Ejemplo:
+HashMap <String, String> capitalCities = new HashMap<String, String>();
+  capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities);
+    
+El primer valor seria la etiqueta y el contenedor el segundo valor, en el contenedor puede haber varios valores.
+	capitalCities.keySet()-------------------------saca solo la etiqueta
+	capitalCities.values() o capitalCities.get()---saca solo el valor
+	
+- Interface: Clases que son usadas en otras de forma "implements" que obliga a crear los datos de la clase interfaz, esto es para relacionar metodos con clases que no tienen nada en comun sin herencia.

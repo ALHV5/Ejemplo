@@ -1,0 +1,75 @@
+· Sistemas 
+	-Memoria 		*trabajo 15%	
+	-Procesador 	*trabajo 15%
+	
+· Redes
+	-Modelo OSI, TCP/IP
+	-Comandos de red
+	-Directorio activo	*trabajo 20%
+	-Servicios de red	*trabajo 30% 
+
+· Seguridad
+	-Sistemas seguros
+	-Plan de seguridad 	*trabajo 20%
+	-Criptografia
+
+· Calendario
+	+ 7 Marzo - 30 Marzo (4 semanas)
+	+ 11 Abril - 19 Mayo (6 semanas)
+
+
+· Nota 
+	50% Examen
+	50% Trabajos
+
+·=Scripts=·
+
+EJER 1
+oro=1000
+echo -p "¿Quieres jugar (si/no)?"
+read apostar
+while [ $apostar = "si" -a $monedas -gt 0 ]
+do
+oro=` expr $oro-50 `
+dado1=` expr $RANDOM % 6 + 1`
+dado2=` expr $RANDOM % 6 + 1`
+dado3=` expr $RANDOM % 6 + 1`
+echo " $dado1 - $dado2 - $dado3"
+if ( $dado1 -eq $dado2 -o $dado2 -eq $dado3 -o $dado1 -eq $dado3 )
+then
+echo "Total oro: $oro"
+oro=`expr $oro + 300`
+else 
+echo "Total oro: $oro"
+fi
+else
+echo "Total oro: $oro"
+fi
+done
+
+
+EJER 2
+#!/bin/bash
+num1=$1
+num2=$2
+if[ $num1 -gt $num2 ]
+then
+aux=$num1
+num1=$num2
+num2=$aux
+fi
+contador=0
+for numero in `seq $num1 $num2`
+do
+rest= `expr $numero % 2`
+if[resto -eq 1]
+then 
+	echo $numero
+	contador= ` expr $contador +1`
+fi
+done
+echo "Son un total de: $contador"
+else
+	echo "Solo se pueden poner 2 parametros"
+	
+	

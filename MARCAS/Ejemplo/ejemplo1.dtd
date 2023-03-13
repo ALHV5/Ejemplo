@@ -1,0 +1,10 @@
+<!ELEMENT libreria (libro+)>
+<!ELEMENT libro (titulo, autor+, anio, precio)>
+<!ATTLIST libro
+          categoria CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo
+          idioma CDATA #IMPLIED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

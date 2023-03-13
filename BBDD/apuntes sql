@@ -1,0 +1,29 @@
+PL/SQL
+	Al hacer select en un pls puede devolver 0, 1 o varias filas. En el caso de ser 0 filas dara un error no_data_fund y en caso de varias filas da too_many_rows.
+	
+-Cursores
+	Permite hacer select que devuelva 0, 1 o varias filas SIN devlver nigun error.
+	
+	Ejemplo de uso:
+	CREATE OR REPLACE PROCEDURE MOSTRAR_EMPLE
+	AS
+  	 CURSOR CUR_EMPLE IS 
+    	SELECT APELLIDO,SALARIO,DEP_NO
+      		FROM EMPLE;
+	 VAPELL VARCHAR2(20);
+	 VSALARIO NUMBER;
+	 VDEP_NO NUMBER;
+	BEGIN
+	 OPEN CUR_EMPLE;/*sE ABRE EL CURSOR*/
+	 FETCH CUR_EMPLE INTO /*ALMACENA TODOS LOS DATOS DE CUR_EMPLE*/
+  		VAPELL, VSALARIO, VDEP_NO;
+		VER(VAPELL);
+  	WHILE CUR_EMPLE%FOUND LOOP
+    	VER(VAPELL||' '||VSALARIO);
+    	FETCH CUR_EMPLE INTO
+      VAPELL, VSALARIO, VEDP_NO
+  	END LOOP;
+   CLOSE CUR_EMPLE;
+   END;
+
+*FOUND: MIENTRAS QUE ENCUENTRE ALGO TRUE CUANDO 	DEVUELVE ALGO/FALSE CUANDO NO DEVUELVE NADA

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria SYSTEM "ejemplo1.dtd">
+<libreria>
+<libro categoria="juvenil">
+  <titulo idioma="ing">Harry Potter</titulo>
+  <autor>J K. Rowling</autor>
+  <anio>2005</anio>
+  <precio>29.99</precio>
+</libro>
+
+<libro categoria="novela">
+  <titulo idioma="sp">La familia</titulo>
+  <autor>Sara Mesa</autor>
+  <anio>2022</anio>
+  <precio>24.50</precio>
+</libro>
+
+ <libro categoria="distopía">
+  <titulo idioma="ing">Los juegos del hambre</titulo>
+  <autor>Suzanne Collins</autor>
+  <anio>2008</anio>
+  <precio>19.99</precio>
+</libro>
+
+<libro categoria="filosofía">
+  <titulo idioma="fr">Sobre la felicidad</titulo>
+  <autor>Frédéric Lenoir</autor>
+  <anio>2014</anio>
+  <precio>16.90</precio>
+</libro>
+
+<libro categoria="novela">
+  <titulo idioma="sp">El señor de las moscas</titulo>
+  <autor>William Golding</autor>
+  <anio>1972</anio>
+  <precio>9.95</precio>
+</libro>
+
+<libro categoria="informática">
+  <titulo>XQuery</titulo>
+  <autor>James McGovern</autor>
+  <autor>Per Bothner</autor>
+  <autor>Kurt Cagle</autor>
+  <autor>James Linn</autor>
+  <autor>Vaidyanathan Nagarajan</autor>
+  <anio>2013</anio>
+  <precio>49.99</precio>
+</libro>
+
+<libro categoria="diseño">
+  <titulo>Ilustrator CC</titulo>
+  <autor>Didier Mazier</autor>
+  <anio>2020</anio>
+  <precio>17.90</precio>
+</libro>
+
+ <libro categoria="distopía">
+  <titulo idioma="ing">Balada de pájaros cantores y serpientes</titulo>
+  <autor>Suzanne Collins</autor>
+  <anio>2020</anio>
+  <precio>27.90</precio>
+</libro>
+
+<libro categoria="novela">
+  <titulo idioma="sp">MAtilde Asensi</titulo>
+  <autor>El origen perdido</autor>
+  <anio>2003</anio>
+  <precio>20</precio>
+</libro>
+
+</libreria>
